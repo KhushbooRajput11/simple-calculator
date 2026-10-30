@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="calculator">
+    
+    <input type="text" id="display" readonly>
+    <div class="btn-container">
+      <button class="btn" onclick="currentdisplay='';
+      updateCalculator();
+      ">C</button>
+      <button class="btn" onclick="currentdisplay+='1';
+      updateCalculator();
+      ">1</button>
+      <button class="btn" onclick="currentdisplay+='2';
+      updateCalculator();
+      ">2</button>
+      <button class="btn" onclick="currentdisplay+='+';
+      updateCalculator();
+      ">+</button>
+      <button class="btn" onclick="currentdisplay+='3';
+      updateCalculator();
+      ">3</button>
+      <button class="btn" onclick="currentdisplay+='4';
+      updateCalculator();
+      ">4</button>
+      <button class="btn" onclick="currentdisplay+='-';
+      updateCalculator();
+      ">-</button>
+      <button class="btn" onclick="currentdisplay+='5';
+      updateCalculator();
+      ">5</button>
+      <button class="btn" onclick="currentdisplay+='6';
+      updateCalculator();
+      ">6</button>
+      <button class="btn" onclick="currentdisplay+='*';
+      updateCalculator();
+      ">*</button>
+      <button class="btn" onclick="currentdisplay+='7';
+      updateCalculator();
+      ">7</button>
+      <button class="btn" onclick="currentdisplay+='8';
+      updateCalculator();
+      ">8</button>
+      <button class="btn" onclick="currentdisplay+='/';
+      updateCalculator();
+      ">/</button>
+      <button class="btn" onclick="currentdisplay=eval(currentdisplay);
+      updateCalculator();
+      ">=</button>
+      <button class="btn"onclick="currentdisplay+='9';
+      updateCalculator();
+      ">9</button>
+      <button class="btn" onclick="currentdisplay+='0';
+      updateCalculator();
+      ">0</button>
+      <button class="btn">.</button>
+    </div>
+  </div>
+  <script >
+    let currentdisplay='';
+    function updateCalculator(){
+document.querySelector('#display').value=currentdisplay;}
+  </script>
+</body>
+</html>
